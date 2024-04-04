@@ -6,9 +6,9 @@ from time import strftime
 root = tk.Tk()
 root.title("Relógio")
 root.iconbitmap("clock1.ico")
-root.geometry("600x300")
-root.maxsize(600, 300)
-root.minsize(600, 300)
+root.geometry("300x300")
+root.maxsize(300, 300)
+root.minsize(300, 300)
 root.configure(background='#000')
 
 
@@ -26,12 +26,12 @@ def get_horas():
    horas.after(1000, get_horas)
 
 
-saudacao = Label(root, bg = '#000', fg = '#e827ea',  font=('gabriola', 18))
+saudacao = Label(root, bg = '#000', fg = '#e827ea',  font=('gabriola', 22))
 saudacao.pack()
-data = Label(root, bg = '#000', fg = '#e827ea',  font=('gabriola', 22))
-data.pack(pady=2)
+data = Label(root, bg = '#000', fg = '#e827ea',  font=('gabriola', 24))
+data.place(relx=0.5, y=100, anchor="center")
 horas = Label(root, bg = '#000', fg = '#e827ea',  font=('gabriola', 64, 'bold'))
-horas.pack()
+horas.place(relx=0.5, y= 200, anchor='center')
 
 get_saudacao()
 get_data()
