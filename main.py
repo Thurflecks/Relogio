@@ -5,10 +5,7 @@ from time import strftime
 
 root = tk.Tk()
 root.title("Relógio")
-root.iconbitmap("clock1.ico")
 root.geometry("300x300")
-root.maxsize(300, 300)
-root.minsize(300, 300)
 root.configure(background='#000')
 
 
